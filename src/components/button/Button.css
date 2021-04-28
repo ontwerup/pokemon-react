@@ -18,10 +18,6 @@
     cursor: not-allowed;
 }
 
-/*.nav-button:hover {*/
-/*    cursor: pointer;*/
-/*}*/
-
 .nav-button + .nav-button {
     margin-left: 8px;
 }

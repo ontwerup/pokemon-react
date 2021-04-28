@@ -6,10 +6,11 @@ function Pokemon({ endpoint }) {
   const [pokemon, setPokemon] = useState(null);
 
   useEffect(() => {
+    console.log(endpoint);
     async function fetchData() {
       try {
-        const result = await axios.get(endpoint);
-        setPokemon(result.data);
+        const { data } = await axios.get(endpoint);
+        setPokemon(data);
       } catch(e) {
         console.error(e);
       }
